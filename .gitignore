@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+
+# 构建产物不进 main 分支。部署走 `npm run deploy`：
+# 它会先把 dist 打包出来，再把 dist 的内容推到 gh-pages 分支，
+# GitHub Pages 从这个分支取文件。这样 main 分支的提交历史里不会塞满压缩后的 js。
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
